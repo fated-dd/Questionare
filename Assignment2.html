@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1>Survey Form</h1>
+        This form aims to provide a feedback channel for the computing students
+        <form action="sub/response.html">
+            <table width="60%" border = "1px">
+                <tr>
+                    <th><b>Question</b></th>
+                    <th><b>Response</b></th>
+                </tr>
+                    <tr>
+                        <td>Name:</td>
+                        <td>
+                            <textarea name="name" placeholder="Plz enter your name" style = "resize:none" rows="2" cols="30"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Class:</td>
+                        <td>
+                            <select name="class">
+                                <option>Computing</option>
+                                <option>Physics</option>
+                                <option>Chemistry</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" name="gender" value="F" id="cp_Female"><label for="cp_Female">Female</label>
+                            <input type="radio" name="gender" value="M" id="cp_Male"><label for="cp_Male">Male</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>
+                            <input type="date" name="dob">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>My Science Subjects</td>
+                        <td>
+                            <input type="checkbox" value="phy" name="subj" id="cp_phy"><label for="cp_phy">Physics</label><br>
+                            <input type="checkbox" value="chem" name="subj" id="cp_chem"><label for="cp_chem">Chemistry</label><br>
+                            <input type="checkbox" value="comp" name="subj" id="cp_comp"><label for="cp_comp">Computing</label>
+                        </td>
+                    </tr> 
+
+                    <tr>
+                        <td>My feedback</td>
+                        <td>
+                            <textarea name="feedback" style="resize:none" rows="6" cols="25" placeholder="Plz enter your feedback here"></textarea>
+                        </td>
+                    </tr>
+                </tr>
+            </table>
+            <br><br>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
